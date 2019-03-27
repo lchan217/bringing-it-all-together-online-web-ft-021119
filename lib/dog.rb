@@ -3,7 +3,6 @@ class Dog
   attr_accessor :name, :breed, :id 
   def initialize(attributes)
     attributes.each {|key, value| self.send(("#{key}="), value)}
-    #id = nil?
   end
   def self.create_table 
     sql = <<-SQL 
